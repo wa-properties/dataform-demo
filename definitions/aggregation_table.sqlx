@@ -1,0 +1,9 @@
+config {
+    type: "table",
+    description: "First table"
+}
+
+SELECT
+  SUM(number) AS total
+FROM
+  ${ref("first_table")}
